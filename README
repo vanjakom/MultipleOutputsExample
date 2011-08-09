@@ -1,1 +1,25 @@
-This file was created by IntelliJ IDEA 10.5.1 for binding GitHub repository
+INFO:
+
+This example shows usage of MultipleOutputs feature of Hadoop Map Reduce and custom code to achieve same funcionality, output to multiple files for M/R jobs.
+
+You can read my blog post for more informations: http://vanjakom.wordpress.com/2011/08/09/hadoop-multipleoutputs-feature/
+
+INSTALL:
+
+1. Your hadoop configuration should be linked to /etc/hadoop/conf ( Cloudera distribution is already doing that ) - this can be modified by editing bin/run.sh
+2. I'm using CDH3u0 Hadoop distibution, you probably can change this by editing pom
+3. do mvn clean package
+4. upload data/sample.txt to hdfs ( I will assume hdfs://localhost/user/hadoop/test/sample.txt )
+
+RUN:
+
+For usage of native MultipleOutputs feature do:
+
+bin/run.sh native hdfs://localhost/user/hadoop/test/sample.txt hdfs://localhost/user/hadoop/test/
+out_native/
+
+For usage of custom code do:
+
+bin/run.sh custom hdfs://localhost/user/hadoop/test/sample.txt hdfs://localhost/user/hadoop/test/out_custom/
+
+Feel free to contact me if you have any questions via vanjakom@gmail.com, @vanjakom or by leaving blog comment.
