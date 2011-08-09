@@ -1,0 +1,8 @@
+hello
+hadoop
+hello
+world
+hello
+multiple outputs
+hello
+hadoop
