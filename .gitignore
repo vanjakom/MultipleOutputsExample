@@ -1,0 +1,5 @@
+target/*
+MultipleOutputsExample.iws
+MultipleOutputsExample.iml
+MultipleOutputsExample.ipr
+application.log
